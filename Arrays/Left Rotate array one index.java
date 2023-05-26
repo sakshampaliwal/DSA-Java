@@ -4,7 +4,7 @@ class Solution
 {
     void leftRotate(long arr[], int k,int n)
     {
-        temp=arr[0];
+        long temp[]=arr[0];
         for (int i = 1; i < n; i++) {
             arr[i-1]=arr[i];
         }
