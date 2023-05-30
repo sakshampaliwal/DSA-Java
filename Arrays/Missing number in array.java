@@ -23,4 +23,22 @@ class Compute {
 }
 
 
+//Better
+//Using Hashing Technique:
 
+class Compute1 {
+    
+    public static int missingNumber(int A[], int N)
+    {
+        int hash[]=new int[N+1];
+        for(int i=0;i<N-1;i++){
+            hash[A[i]]=1;
+        }
+        for(int i=1;i<N+1;i++){
+            if(hash[i]==0){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
