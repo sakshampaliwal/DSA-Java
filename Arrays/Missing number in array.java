@@ -42,3 +42,19 @@ class Compute1 {
         return -1;
     }
 }
+
+//Optimal:
+//Sum
+
+class Compute2 {
+    public static int missingNumber(int A[], int N)
+    {
+        int sum=0;
+        int ExpectedSum=0;
+        for(int i=0;i<N;i++){
+         sum=sum+A[i];   
+        }
+        ExpectedSum=(N*(N+1))/2;
+        return ExpectedSum-sum;
+    }
+}
