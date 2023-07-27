@@ -3,6 +3,7 @@ import java.util.HashMap;
 
 public class TwoSumProblem {
 
+    // Brute Approach
     static int[] fun1(int[] arr, int tosum) {
         int ans[] = { -1, -1 };
         for (int i = 0; i < arr.length; i++) {
@@ -17,6 +18,7 @@ public class TwoSumProblem {
         return ans;
     }
 
+    // Better Approach
     static int[] fun2(int[] arr, int tosum) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int rem = 0;
@@ -35,8 +37,8 @@ public class TwoSumProblem {
         return ans;
     }
 
+    // To answer in YES and NO.
     static String fun3(int[] arr, int tosum) {
-        // To answer in yes and no Function
         int left = 0;
         int right = arr.length - 1;
         Arrays.sort(arr);
