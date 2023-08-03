@@ -23,9 +23,6 @@ public class Consecutive_Sequence {
 	   }
 	   return max;
     }
-    static int fun2(int arr[],int n){
-        
-    }
     public static void main(String[] args) {
         int arr[] = {2,6,1,9,4,5,3};
         int ans=fun1(arr, 7);
